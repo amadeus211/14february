@@ -170,7 +170,7 @@ function drawText() {
         if (window.innerWidth < 600) {
             drawTextWithLineBreaks(["Настя, я так сильно тебе кохаю, більше, ніж", "час та простір, який може вмістити Всесвіт"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
         } else {
-            context.fillText("Настя, я так сильно тебе кохаю, більше, ніж", "час та простір, який може вмістити Всесвіт", canvas.width/2, canvas.height/2);
+            context.fillText("Настя, я так сильно тебе кохаю, більше, ніж час та простір, який може вмістити Всесвіт", canvas.width/2, canvas.height/2);
         }
 
         opacity = opacity + 0.01;
@@ -181,7 +181,7 @@ function drawText() {
         if (window.innerWidth < 600) {
             drawTextWithLineBreaks(["Настя, я так сильно тебе кохаю, більше, ніж", "час та простір, який може вмістити Всесвіт"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
         } else {
-            context.fillText("Настя, так сильно тебе кохаю, більше, ніж", "час та простір, який може вмістити Всесвіт", canvas.width/2, canvas.height/2);
+            context.fillText("Настя, я так сильно тебе кохаю, більше, ніж час та простір, який може вмістити Всесвіт", canvas.width/2, canvas.height/2);
         }
 
         opacity = opacity - 0.01;
@@ -194,7 +194,7 @@ function drawText() {
         if (window.innerWidth < 600) {
             drawTextWithLineBreaks([" я не можу дочекатися, коли зможу провести", "весь час у світі ділячись цим коханням з тобою!"], canvas.width / 2, (canvas.height/2 ), fontSize, lineHeight);
         } else {
-            context.fillText("і я не можу дочекатися, коли зможу провести весь час у світі, ділячись цим коханням з тобою!", canvas.width/2, (canvas.height/2 + 50));
+            context.fillText("і я не можу дочекатися, коли зможу провести весь час у світі, ділячись цим коханням з тобою!", canvas.width/2, canvas.height/2);
         }
 
         secondOpacity = secondOpacity + 0.01;
@@ -215,7 +215,7 @@ function drawText() {
     }
     if(frameNumber >= 3500 && frameNumber < 99999){
         context.fillStyle = `rgba(45, 45, 255, ${thirdOpacity})`;
-        drawTextWithLineBreaks([" З днем святого Валентина <3", "ВІД САШІ МАЛЮКА!"], canvas.width / 2, (canvas.height/2 + 60), fontSize, lineHeight);
+        drawTextWithLineBreaks([" З днем святого Валентина <3", "ВІД САШІ МАЛЮКА!"], canvas.width / 2, canvas.height/2, fontSize, lineHeight);
 
         thirdOpacity = thirdOpacity + 0.01;
 
@@ -239,6 +239,7 @@ function draw() {
         frameNumber++;
     }
     window.requestAnimationFrame(draw);
+    
 }
 
 window.addEventListener("resize", function () {
