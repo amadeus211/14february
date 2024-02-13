@@ -126,12 +126,12 @@ function drawText() {
     }
     if(frameNumber > 1500 && frameNumber < 1750){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("настільки неймовірно, незбагненно малоймовірно", canvas.width/2, canvas.height/2);
+        context.fillText("важко уявити наскільки це малоймовірно", canvas.width/2, canvas.height/2);
         opacity = opacity + 0.01;
     }
     if(frameNumber >= 1750 && frameNumber < 2000){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
-        context.fillText("настільки неймовірно, незбагненно малоймовірно", canvas.width/2, canvas.height/2);
+        context.fillText("важко уявити наскільки це малоймовірно", canvas.width/2, canvas.height/2);
         opacity = opacity - 0.01;
     }
 
@@ -142,9 +142,9 @@ function drawText() {
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
 
         if (window.innerWidth < 600) {
-            drawTextWithLineBreaks(["і все ж я тут, щоб отримати неможливий", " познайомитися з тобою ближче"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
+            drawTextWithLineBreaks(["і все ж я був тут, щоб отримати неможливий ", "шанс познайомитися з тобою ближче"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
         } else {
-            context.fillText("і все ж я тут, щоб отримати неможливий шанс познайомитися з тобою", canvas.width/2, canvas.height/2);
+            context.fillText("і все ж я був тут, щоб отримати неможливий шанс познайомитися з тобою", canvas.width/2, canvas.height/2);
         }
 
         opacity = opacity + 0.01;
@@ -153,9 +153,9 @@ function drawText() {
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
 
         if (window.innerWidth < 600) {
-            drawTextWithLineBreaks(["і все ж я тут, щоб отримати неможливий", "познайомитися з тобою ближче"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
+            drawTextWithLineBreaks(["і все ж я був тут, щоб отримати неможливий ", "шанс познайомитися з тобою ближче"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
         } else {
-            context.fillText("і все ж я тут, щоб отримати неможливий шанс познайомитися з тобою", canvas.width/2, canvas.height/2);
+            context.fillText("і все ж я був тут, щоб отримати неможливий шанс познайомитися з тобою", canvas.width/2, canvas.height/2);
         }
         
         opacity = opacity - 0.01;
@@ -164,37 +164,61 @@ function drawText() {
     if(frameNumber == 2500){
         opacity = 0;
     }
-    if(frameNumber > 2500 && frameNumber < 99999){
+    if(frameNumber > 2500 && frameNumber < 2750){
         context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
 
         if (window.innerWidth < 600) {
-            drawTextWithLineBreaks(["Я так сильно тебе кохаю, Настя, більше, ніж", "час та простір, який може вмістити Всесвіт"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
+            drawTextWithLineBreaks(["Настя, я так сильно тебе кохаю, більше, ніж", "час та простір, який може вмістити Всесвіт"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
         } else {
-            context.fillText("Я так сильно тебе кохаю, Настя, більше, ніж", "час та простір, який може вмістити Всесвіт", canvas.width/2, canvas.height/2);
+            context.fillText("Настя, я так сильно тебе кохаю, більше, ніж", "час та простір, який може вмістити Всесвіт", canvas.width/2, canvas.height/2);
         }
 
         opacity = opacity + 0.01;
     }
-    
-    if(frameNumber >= 2750 && frameNumber < 99999){
-        context.fillStyle = `rgba(45, 45, 255, ${secondOpacity})`;
-
+    if(frameNumber > 2750 && frameNumber < 3000){
+        context.fillStyle = `rgba(45, 45, 255, ${opacity})`;
 
         if (window.innerWidth < 600) {
-            drawTextWithLineBreaks([" я не можу дочекатися, коли зможу провести весь час у світі", "ділячись цим коханням з тобою!"], canvas.width / 2, (canvas.height/2 + 60), fontSize, lineHeight);
+            drawTextWithLineBreaks(["Настя, я так сильно тебе кохаю, більше, ніж", "час та простір, який може вмістити Всесвіт"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
+        } else {
+            context.fillText("Настя, так сильно тебе кохаю, більше, ніж", "час та простір, який може вмістити Всесвіт", canvas.width/2, canvas.height/2);
+        }
+
+        opacity = opacity - 0.01;
+    }
+    if(frameNumber == 3000){
+        opacity = 0;
+    }
+    if(frameNumber >= 3000 && frameNumber < 3250){
+        context.fillStyle = `rgba(45, 45, 255, ${secondOpacity})`;
+        if (window.innerWidth < 600) {
+            drawTextWithLineBreaks([" я не можу дочекатися, коли зможу провести", "весь час у світі ділячись цим коханням з тобою!"], canvas.width / 2, (canvas.height/2 ), fontSize, lineHeight);
         } else {
             context.fillText("і я не можу дочекатися, коли зможу провести весь час у світі, ділячись цим коханням з тобою!", canvas.width/2, (canvas.height/2 + 50));
         }
 
         secondOpacity = secondOpacity + 0.01;
     }
+    if(frameNumber > 3250 && frameNumber < 3500){
+        context.fillStyle = `rgba(45, 45, 255, ${secondOpacity})`;
 
-    if(frameNumber >= 3000 && frameNumber < 99999){
+        if (window.innerWidth < 600) {
+            drawTextWithLineBreaks(["я не можу дочекатися, коли зможу провести", "весь час у світі ділячись цим коханням з тобою!"], canvas.width / 2, canvas.height / 2, fontSize, lineHeight);
+        } else {
+            context.fillText("і я не можу дочекатися, коли зможу провести весь час у світі, ділячись цим коханням з тобою!", canvas.width/2, canvas.height/2);
+        }
+
+        opacity = opacity - 0.01;
+    }
+    if(frameNumber == 3500){
+        opacity = 0;
+    }
+    if(frameNumber >= 3500 && frameNumber < 99999){
         context.fillStyle = `rgba(45, 45, 255, ${thirdOpacity})`;
-        context.fillText("З днем святого Валентина <3", canvas.width/2, (canvas.height/2 + 120));
+        drawTextWithLineBreaks([" З днем святого Валентина <3", "ВІД САШІ МАЛЮКА!"], canvas.width / 2, (canvas.height/2 + 60), fontSize, lineHeight);
+
         thirdOpacity = thirdOpacity + 0.01;
 
-        button.style.display = "block";
     }   
 
      // Reset the shadow effect after drawing the text
